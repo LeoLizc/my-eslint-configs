@@ -1,9 +1,9 @@
-import pluginJs from '@eslint/js';
-import auto from 'eslint-config-canonical/configurations/auto.js';
-import globals from 'globals';
-import tseslint from 'typescript-eslint';
+const pluginJs = require('@eslint/js');
+const auto = require('eslint-config-canonical/configurations/auto.js');
+const globals = require('globals');
+const tseslint = require('typescript-eslint');
 
-export default [
+module.exports = [
   ...auto,
   { files: ['**/*.{js,mjs,cjs,ts}'] },
   { languageOptions: { globals: globals.browser } },
