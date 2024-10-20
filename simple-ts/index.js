@@ -12,7 +12,7 @@ module.exports = [
   {
     rules: {
       '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
-      '@typescript-eslint/lines-between-class-members': [
+      '@/lines-between-class-members': [
         'error',
         'always',
         { exceptAfterSingleLine: true },
